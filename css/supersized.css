@@ -1,0 +1,17 @@
+/*
+Supersized - Fullscreen Slideshow jQuery Plugin
+Version 3.1.3
+www.buildinternet.com/project/supersized
+
+By Sam Dunn / One Mighty Roar (www.onemightyroar.com)
+Released under MIT License / GPL License
+*/
+div#supersized { position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
+div#supersized img{ width:auto; height:auto; position:relative; display:none; outline:none; border:none; }
+div#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
+div#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }			/*Quality*/
+
+div#supersized a { z-index:-30; position:absolute; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111;}
+div#supersized a.prevslide { z-index:-20; }
+div#supersized a.activeslide { z-index:-10; }
+div#supersized a.prevslide img, div#supersized a.activeslide img{ display:inline; }
