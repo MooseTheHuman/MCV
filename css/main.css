@@ -102,7 +102,7 @@ body * {
 }
 
 #name {
-    top: 16em;
+    top: 13.75em;
     font-family: sans-serif;
     font-size: .75em;
 }
@@ -126,7 +126,7 @@ body * {
 
 #header nav ul li a {
     display: block;
-    font-size: 1.25em;
+    font-size: 1.3em;
 }
 
 #header nav #primary li ul {
@@ -264,5 +264,28 @@ body * {
 }
 
 @media screen and (max-width: 735px) {
-    /* align nav vertically */
+    #primary .span2 {
+        position: fixed;
+        right: 3em;
+        line-height: 3em;
+        z-index: 2;
+    }
+    .exp {
+        top: 3em;
+    }
+    .edu {
+        top: 6em;
+    }
+    .ski {
+        top: 9em;
+    }
+    .bio {
+        top: 12em;
+    }
+    .con {
+        top: 15em;
+    }
+    #name {
+        top: 8em;
+    }
 }
