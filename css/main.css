@@ -1,4 +1,4 @@
-/* OVERRIDE DEFAULTS */
+    /* OVERRIDE DEFAULTS */
 
 a {
     text-decoration: none;
@@ -30,8 +30,10 @@ body * {
 }
 
 
-
 /* HEADER */
+
+
+/* Create a fixed to top header */
 
 #header nav ul li {
     border-top: 1px solid #fff;
@@ -55,7 +57,7 @@ body * {
     color: #7cfc00;
 }
 
- #primary {
+#primary {
     position: fixed;
     right: 1em;
     top: .5em;
@@ -63,11 +65,14 @@ body * {
 
 #logo {
     display: inline-block;
+    position: fixed;
 }
+
+
 /* FOOTER */
 
 
-/* fix this to where it has no margin below or beside */
+/* fix this to where it is at bottom of content */
 
 #footer {
     position: fixed;
@@ -83,8 +88,6 @@ body * {
     display: inline-block;
     align-content: left;
 }
-
-
 
 
 /*	Social */
@@ -144,6 +147,7 @@ main > *:target ~ * {
 
 main {
     font-size: 1.2em;
+    padding-left: 5em;
 }
 
 
@@ -151,38 +155,65 @@ main {
 
 @media only screen and (max-width: 450px) {
     #primary {
-        width: 100%; 
+        width: 100%;
+    }
+    #header nav ul li {
+        border-top: none;
     }
     nav ul li a {
         text-align: center;
+        border: solid 1px;
+        background: url(../images/faux-footer-bg.png);
     }
     #header nav ul li {
-        width: 100%;
+        width: 102.65%;
     }
     #header nav ul {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
+        display: block;
+        position: relative;
     }
-    #symbol img {
+    #logo {
         display: block;
         margin: auto;
-        width: auto;
+        width: 70;
         position: relative;
+    }
+    main {
+        padding-left: 0;
+        padding-bottom: 1.6em;
+        padding-top: 4.5em;
+    }
+    h1 {
+        margin-bottom: 0;
+        border-bottom: solid 3px white;
+        text-align: center;
+    }
+    h3 {
+        margin: 0;
+        border: dashed 2px white;
+        text-align: center;
+    }
+    p {
+        font-size: 16px;
+    }
+    li {
+        font-size: 12px;
     }
 }
 
-@media only screen and (min-width: 451px) and (max-width: 800px) {
+@media only screen and (min-width: 451px) and (max-width: 650px) {
     #header nav ul li {
         width: 100px;
     }
 }
 
-@media only screen and (min-width: 801px) and (max-width: 2000px) {
+@media only screen and (min-width: 651px) and (max-width: 800px) {
     #header nav ul li {
-        width: 110px;
+        width: 100px;
     }
-}
-
-
+    @media only screen and (min-width: 801px) and (max-width: 2000px) {
+        #header nav ul li {
+            width: 120px;
+        }
+    }
