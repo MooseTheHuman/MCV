@@ -1,4 +1,4 @@
-    /* OVERRIDE DEFAULTS */
+/* OVERRIDE DEFAULTS */
 
 a {
     text-decoration: none;
@@ -153,6 +153,9 @@ main {
 
 /* MEDIA QUERIES */
 
+
+/* Made the dumb mobile view boxes fit 100% width somehow */
+
 @media only screen and (max-width: 450px) {
     #primary {
         width: 100%;
@@ -202,9 +205,21 @@ main {
     }
 }
 
-@media only screen and (min-width: 451px) and (max-width: 650px) {
+@media only screen and (min-width: 451px) and (max-width: 550px) {
     #header nav ul li {
-        width: 100px;
+        width: 65px;
+    }
+    .topbar {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 650px) {
+    #header nav ul li {
+        width: 80px;
+    }
+    .topbar {
+        font-size: 12px;
     }
 }
 
@@ -212,8 +227,13 @@ main {
     #header nav ul li {
         width: 100px;
     }
-    @media only screen and (min-width: 801px) and (max-width: 2000px) {
-        #header nav ul li {
-            width: 120px;
-        }
+    .topbar {
+        font-size: 14px;
     }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 2000px) {
+    #header nav ul li {
+        width: 120px;
+    }
+}
